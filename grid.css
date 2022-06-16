@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(218, 218, 218);
+    /* display: flex; */
+    place-items: center;
+    min-height: 100vh;
+}
+nav{
+    display: flex;
+    padding: 30px;
+}
+nav > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+   }
+.navlink{
+    text-decoration-style: none;
+}
+.navlink{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.navlink a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.navlink:hover{
+    border-bottom: 1px solid black;
+}
+.navlink:hover a{
+    color: black;
+}
+.active{
+    border-bottom: 1px solid black;
+}
+.active{
+    color: black !important;
+}
+main{
+    display: grid;
+    grid-template-areas: 
+    'sedan suvs luxury'
+    ;
+    gap: -2px;
+    width: 50%;
+    margin: auto;
+}
+img {
+    margin: 30px 30px 5px 20px;
+}
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+    grid-area: sedan;
+    border-radius: 10px 0px 0px 10px;
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    grid-area: suvs;
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    grid-area: luxury;
+    border-radius: 0px 10px 10px 0px;
+}
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+p{
+    padding: 30px 10px 40px 20px;
+    margin: 0px 20px 10px 20px;
+    text-align: left;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+.sedan button{
+    margin: 10px 10px 20px 40px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 22px;
+}
+.suvs button{
+    margin: 10px 10px 20px 40px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: hsl(184, 100%, 22%);
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 22px;
+}
+
+.luxury button{
+    margin: 10px 10px 20px 40px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: hsl(179, 100%, 13%);
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    /* margin-top: 12px; */
+    border-radius: 22px;
+}
+.sedan button:hover {
+    color: white;
+    transition-duration: 0.4s;
+    background-color: hsl(31, 77%, 52%);
+  }
+  .suvs button:hover {
+    color: white;
+    transition-duration: 0.4s;
+    background-color: hsl(184, 100%, 22%);
+  }
+  .luxury button:hover {
+    color: white;
+    transition-duration: 0.4s;
+    background-color: hsl(179, 100%, 13%);
+  }

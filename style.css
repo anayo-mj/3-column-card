@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+@font-face {
+    font-family: Lexend Deca;
+    src: url(https://fonts.google.com/specimen/Lexend+Deca);
+}
+@font-face {
+    font-family: Big Shoulders Display;
+    src: url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+main{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+}
+nav{
+    display: flex;
+    padding: 30px;
+}
+nav > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+   }
+.navlink{
+    text-decoration-style: none;
+}
+.navlink{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.navlink a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.navlink:hover{
+    border-bottom: 1px solid black;
+}
+.navlink:hover a{
+    color: black;
+}
+.active{
+    border-bottom: 1px solid black;
+}
+.active{
+    color: black !important;
+}
+.container{
+    display: flex;
+    height: 60%;
+}
+img {
+    margin: 30px;
+}
+.first-column{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+    height: 100%;
+}
+.second-column{
+    background-color: hsl(184, 100%, 22%);
+    margin: 0px -3px;
+}
+.third-column{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    
+}
+p{
+    padding: 30px 10px 40px 20px;
+    margin: 0px 20px 10px 20px;
+    text-align: left;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', 'Lucida Sans', Verdana, sans-serif;  
+    font-weight: 400; 
+    font-size: 15px;
+}
+.first-column button{
+    margin: 10px 10px 20px 40px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 22px;
+    display: inline-block;
+}
+
+.second-column button{
+    margin: 10px 10px 20px 40px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: hsl(184, 100%, 22%);
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 22px;
+    display: inline-block;
+}
+
+.third-column button{
+    margin: 10px 10px 20px 40px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: hsl(179, 100%, 13%);
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 22px;
+    display: inline-block;
+}
+.first-column button:hover {
+    color: white;
+    transition-duration: 0.4s;
+    background-color: hsl(31, 77%, 52%);
+  }
+  .second-column button:hover {
+    color: white;
+    transition-duration: 0.4s;
+    background-color: hsl(184, 100%, 22%);
+  }
+  .third-column button:hover {
+    color: white;
+    transition-duration: 0.4s;
+    background-color: hsl(179, 100%, 13%);
+  }
